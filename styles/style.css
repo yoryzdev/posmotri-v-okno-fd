@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -70,7 +70,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   width: 1140px;
-  min-height: 534px;
 }
 .result {
   display: flex;
@@ -82,12 +81,12 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
 }
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__details {
@@ -101,7 +100,7 @@ ol {
 /* Заголовок */
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
@@ -141,6 +140,7 @@ ol {
 .content__card-link_current,
 .content__card-link:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -172,7 +172,6 @@ ol {
   height: 298px;
   overflow: auto;
   gap: 30px;
-  padding-right: 6px;
 }
 
 /* Описания в карточках */
@@ -184,7 +183,7 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%; /* 30px */
@@ -197,7 +196,7 @@ ol {
 
 .content__video-card-description {
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -220,7 +219,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
@@ -241,14 +240,14 @@ ol {
 }
 
 .search-form__textfield {
-  width: 225px;
+  min-width: 225px;
   appearance: none;
   background-color: transparent;
   border: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
 }
 /* Чекбокс */
@@ -294,10 +293,11 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 34px;
   padding: 0;
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   background-color: transparent;
@@ -306,14 +306,13 @@ ol {
 /* Тут отдельные стили для кнопки в фильтре */
 .search-form__submit-button {
   width: 194px;
-  min-height: 34px;
   align-self: end;
 }
 /* Тут отдельные стили для кнопки в cписке */
 .more-button {
   width: 100%;
-  min-height: 34px;
 }
+
 /* Тут состояния кнопок */
 .button:hover {
   text-decoration: underline;
@@ -321,6 +320,7 @@ ol {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:focus {
